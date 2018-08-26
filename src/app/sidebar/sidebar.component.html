@@ -1,9 +1,9 @@
 <div class="row">
-  <ul class="list-group col-3" >
-    <li class="list-group-item" *ngFor="let contact of contacts">{{contact.firstName}}</li>
-
+  <ul class="list-group col-2" >
+    <li class="list-group-item" (click)="onContactDetails(contact)" *ngFor="let contact of contacts">{{contact.firstName}}</li>
   </ul>
 </div>
+
 
 
 
