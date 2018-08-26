@@ -1,0 +1,38 @@
+{
+  "contacts":[
+    {
+      "id": 1,
+      "firstName": "Igor",
+      "lastName": "Halichenko",
+      "userName": "Halich",
+      "homePhone": "0345676890",
+      "mobilePhone": "055465234",
+      "age": 23,
+      "birthday": "22-01-1980",
+      "facebookLink": "http://facebook.com/halich"
+    },
+    {
+      "id": 2,
+      "firstName": "Alex",
+      "lastName": "Minchin",
+      "userName": "Min",
+      "homePhone": "0345676890",
+      "mobilePhone": "055465234",
+      "age": 23,
+      "birthday": "22-01-1981",
+      "facebookLink": "http://facebook.com/minch"
+    },
+    {
+      "id": 3,
+      "firstName": "Gregory",
+      "lastName": "Nickitenko",
+      "userName": "Nicj",
+      "homePhone": "0345676890",
+      "mobilePhone": "055465234",
+      "age": 23,
+      "birthday": "22-01-1981",
+      "facebookLink": "http://facebook.com/nick"
+    }
+  ]
+}
+
