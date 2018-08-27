@@ -5,6 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {SidebarComponent} from './sidebar/sidebar.component';
 import {HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MaterialModule} from './material.module';
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
+import {MatDatepickerModule} from '@angular/material';
+import {FormsModule} from '@angular/forms';
+
 
 
 @NgModule({
@@ -15,11 +21,15 @@ import {HttpClientModule} from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    OwlDateTimeModule,
+    OwlNativeDateTimeModule
 
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,14 +3,22 @@ import { CommonModule } from '@angular/common';
 
 import { SidebarRoutingModule } from './sidebar-routing.module';
 import {ContactDetailsModule} from '../contact-details/contact-details.module';
-import {ContactDetailsComponent} from '../contact-details/contact-details.component';
+import {MaterialModule} from '../material.module';
+import {MatDatepickerModule} from '@angular/material';
+import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
+    BrowserModule,
+    FormsModule,
     SidebarRoutingModule,
-    ContactDetailsModule
+    ContactDetailsModule,
+    MaterialModule
   ],
-  declarations: []
+  declarations: [],
+  providers: [MatDatepickerModule]
+
 })
 export class SidebarModule { }

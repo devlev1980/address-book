@@ -1,8 +1,117 @@
+<!--<div class="row">-->
+  <!--<ul class="list-group col-2" >-->
+    <!--<li class="list-group-item" (click)="onContactDetails(contact)" *ngFor="let contact of contacts">{{contact.firstName}}</li>-->
+  <!--</ul>-->
+<!--</div>-->
 <div class="row">
-  <ul class="list-group col-2" >
-    <li class="list-group-item" (click)="onContactDetails(contact)" *ngFor="let contact of contacts">{{contact.firstName}}</li>
-  </ul>
+  <mat-list class="col-3">
+    <mat-list-item   *ngFor="let contact of contacts" (click)="onContactDetails(contact)">{{contact.firstName}}<mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-list>
+
+  <mat-tab-group class="col-6"  >
+    <div >
+      <mat-tab  label="Personal Information" >
+        <mat-form-field class="col-12" >
+          <input matInput placeholder="First Name" #inputFirstName >
+          <mat-icon postFix>assignment_ind</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="col-12">
+          <input matInput placeholder="Last Name" #inputLastName>
+          <mat-icon>assignment_ind</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="col-12">
+          <input matInput placeholder="Username" #inputUserName>
+          <mat-icon>assignment_ind</mat-icon>
+        </mat-form-field>
+
+
+        <mat-form-field class="col-12">
+          <input matInput placeholder="Email" #inputEmail>
+          <mat-icon>email</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="col-12">
+          <input matInput [matDatepicker]="picker" placeholder="Choose a date" #inputBirthday>
+          <mat-icon>calendar_today</mat-icon>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+
+
+      </mat-tab>
+      <mat-tab label="Phones">
+        <mat-form-field class="col-12" >
+          <input matInput placeholder="Home Phone" #inputHomePhone>
+          <mat-icon>phone</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="col-12" >
+          <input matInput placeholder="Mobile Phone" #inputMobilePhone>
+          <mat-icon>smartphone</mat-icon>
+        </mat-form-field>
+
+
+      </mat-tab>
+      <mat-tab label="Address">
+
+        <mat-form-field class="col-12" >
+          <input matInput placeholder="Street" #inputAddressStreet>
+          <mat-icon>location_city</mat-icon>
+
+        </mat-form-field>
+
+        <mat-form-field class="col-12" >
+          <input matInput placeholder="Apartment" #inputAddressApartment>
+          <mat-icon>location_city</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="col-12" >
+          <input matInput placeholder="City" #inputAddressCity>
+          <mat-icon>location_city</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="col-12" >
+          <input matInput placeholder="Country" #inputAddressCountry>
+          <mat-icon>location_city</mat-icon>
+        </mat-form-field>
+      </mat-tab>
+
+      <mat-tab label="Social Networks">
+        <mat-form-field class="col-12" >
+          <input matInput placeholder="Facebook" #inputFacebook >
+          <i class="fab fa-facebook-f"></i>
+        </mat-form-field>
+
+        <mat-form-field class="col-12" >
+          <input matInput placeholder="LinkedIn" #inputLinked >
+          <i class="fab fa-linkedin"></i>
+        </mat-form-field>
+
+        <mat-form-field class="col-12" >
+          <input matInput placeholder="Google" #inputGoogle >
+          <i class="fab fa-google"></i>
+
+
+        </mat-form-field>
+
+        <mat-form-field class="col-12" >
+          <input matInput placeholder="Github" #inputGithub>
+          <i class="fab fa-github"></i>
+
+
+        </mat-form-field>
+
+      </mat-tab>
+    </div>
+
+    <!--<mat-tab label="Third"> Content 3 </mat-tab>-->
+  </mat-tab-group>
 </div>
+
 
 
 

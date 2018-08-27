@@ -1,10 +1,16 @@
-.row{
-  margin: 1rem  10rem;
-
-  .list-group{
-    background-color: #fff;
-    height: 50vh;
-    padding: 10px 20px;
-  }
+//.row{
+//  margin: 1rem  10rem;
+//
+//  .list-group{
+//    background-color: #fff;
+//    height: 50vh;
+//    padding: 10px 20px;
+//  }
+//}
+mat-list{
+  max-width: 20%;
+}
+.example-input-wrapper{
+  width: 200px;
 }
 
