@@ -11,6 +11,7 @@ import {Route, Router} from '@angular/router';
 export class SidebarComponent implements OnInit {
   contacts: Contact[];
   contactInDB: Contact;
+  newContact: Contact;
   @ViewChild('inputFirstName') firstName: ElementRef;
   @ViewChild('inputLastName') lastName: ElementRef;
   @ViewChild('inputUserName') userName: ElementRef;
@@ -32,6 +33,7 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     this.contactService.getContacts().subscribe(res => {
+      console.log(res);
       this.contacts = res;
 
     });
@@ -56,7 +58,30 @@ export class SidebarComponent implements OnInit {
     this.github.nativeElement.value = this.contactInDB.gitHubLink;
 
 
+  }
 
+  onSubmit(firstName, lastName, userName, email, birthday, homePhone, mobilePhone, street, apartment, city, country, facebookLink, linkedInLink, googleLink, gitHubLink) {
+    const newContact = {
+      firstName,
+      lastName,
+      userName,
+      email,
+      birthday,
+      homePhone,
+      mobilePhone,
+      street,
+      apartment,
+      city,
+      country,
+      facebookLink,
+      linkedInLink,
+      googleLink,
+      gitHubLink
+    };
+    // this.contactService.addContact(newContact).subscribe(res => {
+    //   console.log(res);
+    // });
+    // this.onContactDetails(form);
   }
 
 }
