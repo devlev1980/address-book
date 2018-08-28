@@ -18,17 +18,18 @@ export class ContactService {
     return this._http.get<Contact[]>(environment.url).pipe(map(
       (response: Response) => {
         if (response) {
-          return response;
-        }
-        return {};
+          console.log('Response', response);
+            return response;
+          }
+        return [];
       }
     ));
   }
 
-  // addContact(contact) {
-  //   const headers = new Headers();
-  //   headers.append('Content-Type', 'application/json');
-  //   return this._http.post(environment.url, contact, {headers: headers})
-  //
-  // }
+  addContact(contact) {
+
+
+    return this._http.post(environment.url, contact);
+
+  }
 }

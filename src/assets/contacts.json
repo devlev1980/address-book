@@ -1,5 +1,6 @@
-
- [
+{
+  "contacts":
+  [
     {
       "id": 1,
       "firstName": "Igor",
@@ -11,7 +12,7 @@
       "mobilePhone": "055465234",
       "address":{
         "street": "Bialik",
-          "apartment":25,
+        "apartment":25,
         "city":"Ramat Gan",
         "country":"Israel"
       },
@@ -20,47 +21,49 @@
       "googleLink":"http://google.com/halich",
       "gitHubLink":"http://github.com/halich"
     },
-   {
-     "id": 2,
-     "firstName": "Alex",
-     "lastName": "Nemiroff",
-     "userName": "Nemiroff",
-     "email":"nemiroff@gmail.com",
-     "birthday": "22-01-1986",
-     "homePhone": "03456765677",
-     "mobilePhone": "05546456456",
-     "address":{
-       "street": "Rotshild",
-       "apartment":7,
-       "city":"Tel-Aviv",
-       "country":"Israel"
-     },
-     "facebookLink": "http://facebook.com/nemiroff",
-     "linkedInLink":"http://linkedIn.com/nemiroff",
-     "googleLink":"http://google.com/nemiroff",
-     "gitHubLink":"http://github.com/nemiroff"
-   },
-   {
-     "id": 3,
-     "firstName": "Pavel",
-     "lastName": "Smerdiaev",
-     "userName": "Smerdiaev",
-     "email":"smerdiaev@gmail.com",
-     "birthday": "22-01-1977",
-     "homePhone": "034567654444",
-     "mobilePhone": "055464568888",
-     "address":{
-       "street": "Poleg",
-       "apartment":7,
-       "city":"Rosh Ain",
-       "country":"Israel"
-     },
-     "facebookLink": "http://facebook.com/smerdiaev",
-     "linkedInLink":"http://linkedIn.com/smerdiaev",
-     "googleLink":"http://google.com/smerdiaev",
-     "gitHubLink":"http://github.com/smerdiaev"
-   }
+    {
+      "id": 2,
+      "firstName": "Alex",
+      "lastName": "Nemiroff",
+      "userName": "Nemiroff",
+      "email":"nemiroff@gmail.com",
+      "birthday": "22-01-1986",
+      "homePhone": "03456765677",
+      "mobilePhone": "05546456456",
+      "address":{
+        "street": "Rotshild",
+        "apartment":7,
+        "city":"Tel-Aviv",
+        "country":"Israel"
+      },
+      "facebookLink": "http://facebook.com/nemiroff",
+      "linkedInLink":"http://linkedIn.com/nemiroff",
+      "googleLink":"http://google.com/nemiroff",
+      "gitHubLink":"http://github.com/nemiroff"
+    },
+    {
+      "id": 3,
+      "firstName": "Pavel",
+      "lastName": "Smerdiaev",
+      "userName": "Smerdiaev",
+      "email":"smerdiaev@gmail.com",
+      "birthday": "22-01-1977",
+      "homePhone": "034567654444",
+      "mobilePhone": "055464568888",
+      "address":{
+        "street": "Poleg",
+        "apartment":7,
+        "city":"Rosh Ain",
+        "country":"Israel"
+      },
+      "facebookLink": "http://facebook.com/smerdiaev",
+      "linkedInLink":"http://linkedIn.com/smerdiaev",
+      "googleLink":"http://google.com/smerdiaev",
+      "gitHubLink":"http://github.com/smerdiaev"
+    }
 
   ]
+}
+
 
 

@@ -9,7 +9,7 @@ import {Route, Router} from '@angular/router';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  contacts: Contact[];
+  contacts = [] as  Contact[];
   contactInDB: Contact;
   newContact: Contact;
   @ViewChild('inputFirstName') firstName: ElementRef;
@@ -32,9 +32,10 @@ export class SidebarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.contactService.getContacts().subscribe(res => {
-      console.log(res);
-      this.contacts = res;
+    this.contactService.getContacts().subscribe((res: any) => {
+      if (res !== null) {
+        this.contacts = res.contacts;
+      }
 
     });
   }
@@ -78,9 +79,9 @@ export class SidebarComponent implements OnInit {
       googleLink,
       gitHubLink
     };
-    // this.contactService.addContact(newContact).subscribe(res => {
-    //   console.log(res);
-    // });
+    this.contactService.addContact(newContact).subscribe(res => {
+      console.log(res);
+    });
     // this.onContactDetails(form);
   }
 
